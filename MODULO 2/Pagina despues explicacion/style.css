@@ -1,0 +1,217 @@
+*{
+	box-sizing: border-box;
+}
+
+body
+{
+	font-size:13px;
+	font-family: "Roboto";
+}
+
+a
+{
+	display: inline-block;
+	text-decoration: none;
+}
+
+p
+{
+	color:black;
+}
+
+header
+{
+	position: relative;
+	top: 0;
+	width: 100%;
+	left: 0;
+	z-index: 2;
+	background-color: white;
+	width: 100%;
+}
+
+header .container
+{
+	display: flex;
+	background-color: #d91b54;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .container .logo
+{
+	width: 100px;
+	height: 110%;
+}
+
+header .container nav a
+{
+	color: black;
+	text-decoration: none;
+	margin: 0 15px 0 15px;
+}
+
+header .container .hamb
+	{
+		display: none;	
+	}
+
+footer.seccion
+{
+	background-color: #f8e9eb;
+	color: white;
+	padding-bottom: 0;
+}
+
+footer .barra-footer
+{
+	background-color: #eea7ad;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+footer ul
+{
+	color: black;
+	padding-left: 0;
+	list-style: none;
+	margin: 0; 
+}
+
+footer ul li
+{
+	margin-bottom: 10px;
+}
+
+footer .logo-footer
+{
+	width: 100%;
+}
+
+footer p
+{
+	color: black;
+	margin-bottom: 30px;
+}
+
+footer a
+{
+	color: black;
+}
+
+footer .redes
+{
+	color: black;
+	font-size: 30px;
+	display: flex;
+}
+
+footer .redes a
+{
+	margin: 0 7.5px;
+	color: black;
+}
+
+.boton.boton-rosa
+{
+	color: white;
+	background-color: #be3967;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#inicio
+{
+	position: relative;
+}
+
+#inicio img
+{
+	width: 100%;
+	display: block;
+}
+
+#inicio .bloque-inicio
+{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-left: -200px;
+	text-align: center;
+	width: 400px;
+}
+
+#inicio .bloque-inicio h1
+{
+	color: black;
+	font-size: 35px
+}
+
+.container
+{
+	width: 1140px;
+	margin: 0 auto 0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	position: relative;
+}
+
+#inicio .bloque-inicio p
+{
+	color: black;
+	font-size: 16px;
+}
+
+.seccion
+{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.row
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.columna
+{
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.columna-25
+{
+	width: 25%;
+}
+
+@media(max-width: 767px)
+{
+	body
+	{
+		font-size: 15px;
+	}
+
+	header .container nav
+	{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: white;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		padding-left: 15px;
+		padding-right: 15px;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		transition: all 0.4s ease;
+		transform: translateX(100%);
+	}
+}
