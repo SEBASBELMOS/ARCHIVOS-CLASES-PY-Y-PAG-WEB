@@ -16,7 +16,12 @@ a
 
 p
 {
-	color:black;
+	color: black;	
+}
+
+#nosotros .container p
+{
+	color: black;
 }
 
 header
@@ -46,7 +51,7 @@ header .container .logo
 
 header .container nav a
 {
-	color: black;
+	color: white;
 	text-decoration: none;
 	margin: 0 15px 0 15px;
 }
@@ -59,7 +64,7 @@ header .container .hamb
 footer.seccion
 {
 	background-color: #f8e9eb;
-	color: white;
+	color: black;
 	padding-bottom: 0;
 }
 
@@ -123,6 +128,34 @@ footer .redes a
 	font-weight: bold;
 }
 
+.boton.boton-rosado
+{
+	color: black;
+	background-color: pink;
+	font-size: 16px;
+	font-weight: bold;
+	border: 1px solid red;
+}
+
+.cuadrado-perfecto
+{
+	width: 100%;
+	padding-bottom: 100%;
+	position: relative;
+}
+
+.cuadrado-perfecto img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+	object-position: center;
+	position: absolute;
+}
+
+
 #inicio
 {
 	position: relative;
@@ -165,6 +198,53 @@ footer .redes a
 	font-size: 16px;
 }
 
+#nosotros
+{
+	background-image: url(img/latas.jpg);
+	background-size: cover;
+}
+	
+#nosotros p
+{
+		color: white;
+		text-align: center;
+		font-size: 16px
+		/*margin: 0;*/
+}
+
+#servicios .bloque-servicio
+{
+	border: 1px solid gray;
+}
+
+#servicios .bloque-servicio .bloque-img-servicio
+{
+	height: 100%;
+}
+
+#servicios .bloque-servicio .bloque-img-servicio img
+{
+	width: 100%;
+	height: 100%;
+}
+
+#servicios .bloque-servicio .bloque-img-servicio.cuadrado-perfecto
+{
+	padding-bottom: 56.25%;
+}
+
+#servicios .bloque-servicio .bloque-contenido-servicio
+{
+	padding: 15px;
+}
+
+#servicios .bloque-servicio .bloque-contenido-servicio h3
+{
+	margin-top: : 0;
+	font-size: 25px;
+}
+
+
 .seccion
 {
 	padding-top: 60px;
@@ -188,6 +268,16 @@ footer .redes a
 .columna-25
 {
 	width: 25%;
+}
+
+.columna-33
+{
+	width: 33.33%;
+}
+
+section #servicios .container h3 
+{
+	text-align: center;
 }
 
 @media(max-width: 767px)
