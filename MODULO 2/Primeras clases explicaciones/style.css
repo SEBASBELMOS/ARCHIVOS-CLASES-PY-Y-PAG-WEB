@@ -29,7 +29,7 @@ p
 	color:black;
 }
 
-header
+header/*comentrio*/
 {
 	position: relative;
 	top: 0;
@@ -53,6 +53,7 @@ footer a
 section #tabla
 {
 border:1px solid;
+border-radius: 7px;
 color: black;
 border-collapse: collapse;
 width: 100%;
@@ -68,6 +69,7 @@ section #tabla th
 section #tabla td 
 {
 	border: 1px solid;
+	border-bottom: 2px solid red;
 	color: black;
 	border-collapse: collapse;
 	text-align: center;
@@ -76,6 +78,7 @@ section #tabla td
 section #tabla #a, #b, #c, #d
 {
 	background-color: #8ae9ff;
+	border-style: dotted dashed;
 }
 
 section #tabla #e,#f,#g,#h,#i,#j,#k
