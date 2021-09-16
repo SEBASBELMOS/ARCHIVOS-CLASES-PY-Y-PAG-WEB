@@ -1,0 +1,85 @@
+*{
+	box-sizing: border-box;
+}
+
+body
+{
+	font-size:13px;
+	font-family: "Roboto";
+}
+
+a
+{
+	display: inline-block;
+	text-decoration: none;
+}
+footer p
+{
+	color: black;
+	margin-bottom: 30px;
+}
+
+footer a
+{
+	color: black;
+}
+
+p
+{
+	color:black;
+}
+
+header
+{
+	position: relative;
+	top: 0;
+	width: 100%;
+	left: 0;
+	z-index: 2;
+	background-color: white;
+	width: 100%;
+}
+footer p
+{
+	color: black;
+	margin-bottom: 30px;
+}
+
+footer a
+{
+	color: black;
+}
+
+section #tabla
+{
+border:1px solid;
+color: black;
+border-collapse: collapse;
+width: 100%;
+}
+
+section #tabla th 
+{
+	border: 1px solid;
+	color: black;
+	border-collapse: collapse;
+}
+
+section #tabla td 
+{
+	border: 1px solid;
+	color: black;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+section #tabla #a, #b, #c, #d
+{
+	background-color: #8ae9ff;
+}
+
+section #tabla #e,#f,#g,#h,#i,#j,#k
+{
+	background-color: #fffcdb;
+	font-family: verdana;
+}
