@@ -64,12 +64,14 @@ header .container
 	font-size: 15px;
 	font-weight: bolder;
 	width: 100%;
+	height: 80px;
 }
 
 header .container .logo
 {
 	width: 100px;
-	height: 110%;
+	height: 100%;
+	object-position: center;
 }
 
 header .container nav a
