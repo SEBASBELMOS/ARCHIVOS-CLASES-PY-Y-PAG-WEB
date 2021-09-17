@@ -31,6 +31,20 @@ p
 	font-weight: bold;
 }
 
+#nosotros .container #ftf
+{
+	position: relative;
+}
+
+#nosotros .cuadrado-foto
+{
+	display: block;
+	position: relative;
+	width: 278px;
+	height: 384px;
+	border: 2px solid black	;
+}
+
 header
 {
 	position: relative;
@@ -49,6 +63,7 @@ header .container
 	align-items: center;
 	font-size: 15px;
 	font-weight: bolder;
+	width: 100%;
 }
 
 header .container .logo
