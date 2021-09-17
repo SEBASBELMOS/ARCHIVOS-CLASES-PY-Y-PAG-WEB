@@ -24,6 +24,13 @@ p
 	color: black;
 }
 
+#nosotros .container #namef
+{
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+}
+
 header
 {
 	position: relative;
@@ -40,6 +47,8 @@ header .container
 	background-color: #d91b54;
 	justify-content: space-between;
 	align-items: center;
+	font-size: 15px;
+	font-weight: bolder;
 }
 
 header .container .logo
@@ -129,8 +138,9 @@ footer .redes a
 {
 	color: white;
 	background-color: #be3967;
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: bold;
+	border: 4px solid #be3967;
 }
 
 .boton.boton-rosado
