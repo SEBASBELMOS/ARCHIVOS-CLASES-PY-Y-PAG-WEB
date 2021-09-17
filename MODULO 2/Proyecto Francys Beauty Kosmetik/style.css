@@ -136,11 +136,11 @@ footer .redes a
 
 .boton.boton-rosado
 {
-	color: black;
-	background-color: #e477d7;
+	color: white;
+	background-color: #d91b54;
 	font-size: 16px;
 	font-weight: bold;
-	border: 1px solid #e477d7;
+	border: 4px solid #d91b54;
 }
 
 .cuadrado-perfecto
@@ -154,7 +154,7 @@ footer .redes a
 {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: contain;
 	top: 0;
 	left: 0;
 	object-position: center;
