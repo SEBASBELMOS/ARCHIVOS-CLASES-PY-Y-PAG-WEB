@@ -191,6 +191,8 @@ footer .redes a
 {
 	position: relative;
 	background-color: #f8e9eb;
+	padding-top: 1px;
+	padding-bottom: 8px;
 }
 
 #inicio img
@@ -198,6 +200,7 @@ footer .redes a
 	width: 100%;
 	display: block;
 }
+
 
 #inicio .bloque-inicio
 {
@@ -320,6 +323,14 @@ footer .redes a
 section #servicios .container h3 
 {
 	text-align: center;
+}
+
+.linea
+{
+	width: 100%;
+	background-color: black;
+
+	padding-right: 116px;
 }
 
 @media(max-width: 767px)
