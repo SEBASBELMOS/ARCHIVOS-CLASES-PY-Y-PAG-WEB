@@ -64,7 +64,7 @@ header .container
 	font-size: 15px;
 	font-weight: bolder;
 	width: 100%;
-	height: 80px;
+	height: 77px;
 }
 
 header .container .logo
@@ -91,6 +91,7 @@ footer.seccion
 	background-color: #f8e9eb;
 	color: black;
 	padding-bottom: 0;
+	padding-top: 15px;
 }
 
 footer .barra-footer
@@ -123,8 +124,8 @@ footer .logo-footer
 
 footer img
 {
-	width: 270px;
-	height: 88.42px;
+	width: 450px;
+	height: 130px;
 }
 
 footer p
@@ -157,7 +158,14 @@ footer .redes a
 	background-color: #be3967;
 	font-size: 20px;
 	font-weight: bold;
-	border: 4px solid #be3967;
+	padding: 4px 4px 4px 4px;
+}
+
+.boton.boton-rosa:hover
+{
+
+	background: #e7b1b9;
+	color: black;
 }
 
 .boton.boton-rosado
@@ -166,7 +174,13 @@ footer .redes a
 	background-color: #d91b54;
 	font-size: 16px;
 	font-weight: bold;
-	border: 4px solid #d91b54;
+	padding: 4px 4px 4px 4px;
+}
+
+.boton.boton-rosado:hover
+{
+	background: #e7b1b9;
+	color: black;
 }
 
 .cuadrado-perfecto
@@ -232,6 +246,7 @@ footer .redes a
 	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
+	padding-bottom: 15px;
 	position: relative;
 }
 
@@ -323,14 +338,6 @@ footer .redes a
 section #servicios .container h3 
 {
 	text-align: center;
-}
-
-.linea
-{
-	width: 100%;
-	background-color: black;
-
-	padding-right: 116px;
 }
 
 @media(max-width: 767px)
