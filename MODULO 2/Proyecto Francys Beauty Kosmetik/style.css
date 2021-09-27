@@ -81,6 +81,11 @@ header .container nav a
 	margin: 0 15px 0 15px;
 }
 
+header .container nav a:hover
+{
+	color: black;
+}
+
 header .container .hamb
 	{
 		display: none;	
@@ -144,6 +149,7 @@ footer .redes
 	color: black;
 	font-size: 30px;
 	display: flex;
+	cursor: pointer;
 }
 
 footer .redes a
@@ -163,7 +169,7 @@ footer .redes a
 
 .boton.boton-rosa:hover
 {
-
+	cursor: pointer;
 	background: #e7b1b9;
 	color: black;
 }
@@ -181,6 +187,7 @@ footer .redes a
 {
 	background: #e7b1b9;
 	color: black;
+	cursor: pointer;
 }
 
 .cuadrado-perfecto
@@ -344,7 +351,7 @@ section #servicios .container h3
 {
 	body
 	{
-		font-size: 15px;
+		font-size: 14px;
 	}
 
 	header .container nav
@@ -355,8 +362,8 @@ section #servicios .container h3
 		background-color: white;
 		padding-top: 80px;
 		padding-bottom: 80px;
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: 10px;
+		padding-right: 0;
 		top: 0;
 		left: 0;
 		display: flex;
@@ -364,4 +371,82 @@ section #servicios .container h3
 		transition: all 0.4s ease;
 		transform: translateX(100%);
 	}
+
+	header .container nav.open
+	{
+		transform: translateX(0);
+		background-color: #e25b84;
+	}
+
+	header .container nav a
+	{
+		font-size: 30px;
+		margin: 15px 0;
+	}
+
+	header .container .hamb
+	{
+		display: block;
+		font-size: 30px;
+		color: white;
+		position: relative;
+	}
+
+	footer
+	{
+		text-align: center;
+	}
+
+	footer .logo-footer
+	{
+		width: 50%;
+	}
+
+	footer .redes
+	{
+		justify-content: center;
+	}
+
+	.container
+	{
+		width: 100%;
+	}
+
+	.columna-mobile-100
+	{
+		width: 100%;
+	}
+
+	.empujar-mobile-0
+	{
+		margin-left: 0;
+	}
+
+	.sinpadding-mobile
+	{
+		padding: 0;
+	}
+
+	#inicio
+	{
+		height: 100vh;
+	}
+
+	#inicio
+	{
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	#servicios .bloque-servicio
+	{
+		margin-bottom: 15px;
+	}
+
+	#contactenos 
+	{
+		padding: 0;
+	}
+
 }
