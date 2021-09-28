@@ -302,11 +302,6 @@ footer .redes a
 	font-size: 25px;
 }
 
-#galeria
-{
-
-}
-
 #galeria .cuadrado-perfecto img
 {
 	border: 3px solid #d91b54;
@@ -375,7 +370,7 @@ section #servicios .container h3
 	header .container nav.open
 	{
 		transform: translateX(0);
-		background-color: #e25b84;
+		background-color: #d91b54;
 	}
 
 	header .container nav a
@@ -442,11 +437,6 @@ section #servicios .container h3
 	#servicios .bloque-servicio
 	{
 		margin-bottom: 15px;
-	}
-
-	#contactenos 
-	{
-		padding: 0;
 	}
 
 }
