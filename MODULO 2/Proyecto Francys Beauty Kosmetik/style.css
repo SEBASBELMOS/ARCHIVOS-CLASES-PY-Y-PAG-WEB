@@ -222,6 +222,26 @@ footer .redes a
 	display: block;
 }
 
+.cos
+{
+	height: 390px;
+}
+
+.cos .cuadrado-foto
+{
+	display: block;
+	float: left;
+	width: 278px;
+	height: 384px;
+	border: 2px solid black;
+	margin-left: 20px;
+}
+
+.cos .info
+{
+	padding-top: 100px;
+	padding-right: 40px;
+}
 
 #inicio .bloque-inicio
 {
