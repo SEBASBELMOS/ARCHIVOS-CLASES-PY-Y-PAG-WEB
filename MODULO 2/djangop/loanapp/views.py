@@ -9,3 +9,7 @@ def prueba(request):
 def suma(request):
     suma1 = 3 + 4
     return HttpResponse(f"La suma de 3 mas 4 es igual a {suma1}")
+
+def calcular(request, fecha, fecha2):
+    edad = 2021 - fecha
+    return HttpResponse(f"En el {fecha2} cumple {edad}")
