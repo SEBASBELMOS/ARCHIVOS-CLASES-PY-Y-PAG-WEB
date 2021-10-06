@@ -13,3 +13,7 @@ def suma(request):
 def calcular(request, fecha, fecha2):
     edad = 2021 - fecha
     return HttpResponse(f"En el {fecha2} cumple {edad}")
+
+def index(request):
+    context = {'parrafo': 'Esto es un parrafo'}
+    return render(request, 'index.html', context)
