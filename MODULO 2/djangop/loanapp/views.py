@@ -15,5 +15,12 @@ def calcular(request, fecha, fecha2):
     return HttpResponse(f"En el {fecha2} cumple {edad}")
 
 def index(request):
-    context = {'parrafo': 'Esto es un parrafo'}
+    titulo = 'Pagina Inicial'
+    ahora = datetime.now()
+    parrafo = "Aqui esta un parrafo"    
+    context = {
+        'titulo': titulo,
+        'tiempo':ahora,
+        'parrafo': parrafo,
+    }
     return render(request, 'index.html', context)
