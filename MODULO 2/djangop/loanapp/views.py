@@ -22,5 +22,7 @@ def index(request):
         'titulo': titulo,
         'tiempo':ahora,
         'parrafo': parrafo,
+        'Estado':False,
+        'itera':range(0,10)
     }
     return render(request, 'index.html', context)

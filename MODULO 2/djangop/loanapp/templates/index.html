@@ -11,5 +11,21 @@
     <h3>Hora:</h3><span>{{tiempo}}</span>
     </div>
     <p>{{parrafo}}</p>
+
+    
+    {% if Estado == False %}
+        <p>El Estado es Desconectado</p>
+    {% else %}
+        <p>El Estado es Conectado</p>
+    {% endif %}
+
+    <ul>
+        {% for iter in itera %}
+        <li>{{iter}}</li>
+        {% endfor %}
+        
+    </ul>
+    
+        
 </body>
 </html>
