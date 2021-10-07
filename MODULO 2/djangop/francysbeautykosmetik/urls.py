@@ -22,5 +22,7 @@ urlpatterns = [
     path('prueba/', prueba),
     path('prueba/suma/', suma),
     path('<int:fecha>/<int:fecha2>', calcular),
-    path('prueba/pag/', index),
+    path('', index),
+    path('post/', post)
+    path('',home)
 ]

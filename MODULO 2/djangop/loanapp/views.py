@@ -25,4 +25,18 @@ def index(request):
         'Estado':False,
         'itera':range(0,10)
     }
-    return render(request, 'index.html', context)
+    return render(request, 'inicio.html', context)
+
+def post(request):
+    titulo = "Post"
+    anio = ahora = datetime.now().year
+    autor = "Sebastian Belalcazar Mosquera"
+    context = {
+        'titulo': titulo,
+        "year":anio,
+        "autor":autor,
+    }
+    return render(request, "post.html", context)
+
+def home(request):
+    return render(request, 'inicio.html')

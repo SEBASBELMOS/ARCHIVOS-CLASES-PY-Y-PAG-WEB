@@ -6,34 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'style.css' %}">
-    <title>{{titulo}}</title>
+    <title>{% block titulo%}{%endblock titulo%}</title>
 </head>
 <body>
-    <div>
-    <h3>Hora:</h3><span>{{tiempo}}</span>
-    </div>
-    <p>{{parrafo}}</p>
-
     
-    {% if Estado == False %}
-        <p>El Estado es Desconectado</p>
-    {% else %}
-        <p>El Estado es Conectado</p>
-    {% endif %}
-
-    
-    {% comment %}
-        esto es un comentario
-    {% endcomment %}
+    {% block contenido %}
         
-    <img class="img" src="{% static 'homer.jfif' %}">
-
-    <ul>
-        {% for iter in itera %}
-        <li>{{iter}}</li>
-        {% endfor %}
-    </ul>
-    
+    {% endblock contenido %}
     <script src="{% static 'funciones.js' %}"></script>    
 </body>
 </html>
