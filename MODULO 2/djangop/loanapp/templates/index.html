@@ -26,13 +26,14 @@
         esto es un comentario
     {% endcomment %}
         
+    <img class="img" src="{% static 'homer.jfif' %}">
+
     <ul>
         {% for iter in itera %}
         <li>{{iter}}</li>
         {% endfor %}
-        
     </ul>
     
-        
+    <script src="{% static 'funciones.js' %}"></script>    
 </body>
 </html>

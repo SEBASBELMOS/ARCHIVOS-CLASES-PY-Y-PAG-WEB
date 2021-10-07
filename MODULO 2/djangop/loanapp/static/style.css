@@ -11,3 +11,9 @@ p
 {
     font-size: small;
 }
+
+img
+{
+    width: 200px;
+    height: 100px;
+}
