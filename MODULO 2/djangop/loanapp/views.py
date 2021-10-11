@@ -40,3 +40,4 @@ def post(request):
 
 def home(request):
     return render(request, 'inicio.html')
+

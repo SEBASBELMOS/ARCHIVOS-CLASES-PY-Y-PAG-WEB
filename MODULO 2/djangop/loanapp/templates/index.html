@@ -1,18 +1,196 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <title>{% block titulo%}{%endblock titulo%}</title>
-</head>
-<body>
-    
-    {% block contenido %}
-        
-    {% endblock contenido %}
-    <script src="{% static 'funciones.js' %}"></script>    
-</body>
+<html>
+	<head>
+        <meta charset="UTF-8">
+		<meta name="keywords" content="cosmetica,belleza,kosmetik,beauty,store,Suiza,Zurich">
+		<meta name="description" content="Salon de belleza y cosmetica en Zurixh, Suiza">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Inicio | Francys Beauty Kosmetik</title>
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="{% staticnormalize.css%}">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+		<script src="https://kit.fontawesome.com/a9b00b0f2d.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<a href="index.html">
+					<img src="{% static 'logofbk.svg'%}" class="logo">
+				</a>
+				<nav>
+					<a href="#inicio">Inicio</a>
+					<a href="#nosotros">Cosmetologa</a>
+					<a href="#servicios">Servicios</a>
+					<a href="#galeria">Galería</a>
+					<a href="#seccion">Contactar</a>
+				</nav>
+				<a href="#" class="hamb"><i class="fas fa-bars"></i></a>
+			</div>
+		</header>
+		<section id="inicio">
+				<div class="bloque-inicio">
+					<h1>Bienvenidos a Francys Beauty Kosmetik</h1>
+					<p>
+								Cosmetologa diplomada en Colombia y Suiza
+					</p>
+					<a href="#nosotros" class="boton boton-rosa">Ver más</a>
+				</div>
+			</section>
+			<section id="nosotros">
+				<div class="container">
+					<p id="namef">Francy Baier</p>
+					<hr>
+					<div class="cos">
+						<div class="cuadrado-foto">
+							<img src="{% static 'fd.png'%}">
+						</div>
+						<div class="info">
+							<p>
+									<br>Especialista en tecnicas manuales faciales y corporales, reducción y moldeo.
+									<br>Certificada en manejo de paciente pre y posquirurgico.
+												<br>Drenaje linfático, Micropigmentadora.
+									<br>Especialista en maderoterapia y metaloterapía técnica colombiana
+												<br>Maquilladora profesional
+													<br>Diseñadora de uñas
+												<br>Experta en depilación
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="servicios" class="seccion">
+				<div class="container">
+					<div class="row">
+						<div class="columna columna-33 columna-mobile-100">
+							<div class="bloque-servicio">
+								<div class="bloque-img-servicio cuadrado-perfecto">
+									<img src="{% static 'fe.jpg'%}">
+								</div>
+								<div class="bloque-contenido-servicio">
+									<h3>Maquillajes</h3>
+									<p>Click en el boton de abajo para mas info</p>
+									<a href="#" class="boton boton-rosado">Ver más</a>
+								</div>
+							</div>
+						</div>
+						<div class="columna columna-33 columna-mobile-100">
+							<div class="bloque-servicio">
+								<div class="bloque-img-servicio cuadrado-perfecto">
+									<img src="{% static 'fb.jpg'%}">
+								</div>
+								<div class="bloque-contenido-servicio">
+									<h3>Tratamientos</h3>
+									<p>Click en el boton de abajo para mas info</p>
+									<a href="#" class="boton boton-rosado">Ver más</a>
+								</div>
+							</div>
+						</div>
+						<div class="columna columna-33 columna-mobile-100">
+							<div class="bloque-servicio">
+								<div class="bloque-img-servicio cuadrado-perfecto">
+									<img src="{% static 'fc.jpg'%}">
+								</div>
+								<div class="bloque-contenido-servicio">
+									<h3>Especial</h3>
+									<p>Click en el boton de abajo para mas info</p>
+									<a href="#" class="boton boton-rosado">Ver más</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="galeria">
+				<div class="container-fluid">
+				<div class="row">
+					<div class="columna-33 columna-mobile-50">
+						<div class="cuadrado-perfecto">
+							<img src="{% static 'fb.jpg'%}">
+
+						</div>
+					</div>
+					<div class="columna-33 columna-mobile-50">
+						<div class="cuadrado-perfecto">
+							<img src="{% static 'fc.jpg'%}">
+
+						</div>
+					</div>
+					<div class="columna-33 columna-mobile-50">
+						<div class="cuadrado-perfecto">
+							<img src="{% static 'fe.jpg'%}">
+						</div>
+					</div>
+					<div class="columna-33 columna-mobile-50">
+						<div class="cuadrado-perfecto">
+							<img src="{% static 'fm.jpg'%}">
+						</div>
+					</div>
+					<div class="columna-33 columna-mobile-50">
+						<div class="cuadrado-perfecto">
+							<img src="{% static 'fl.jpg' %}">
+						</div>
+					</div>
+					<div class="columna-33 columna-mobile-50">
+						<div class="cuadrado-perfecto">
+							<img src="{% static 'fg.jpg' %}">
+						</div>
+					</div>
+				</div>
+			</div>
+			</section>
+		<footer class="seccion" id="seccion">
+			<div class="container">
+				<div class="row">
+					<div class="columna-25 columna-mobile-100">
+						<img src="{% static 'logofbk.svg' %}" class="logo-footer">
+						<p>
+							Brindamos servicios con calidad e integridad. 
+						</p>
+					</div>
+					<div class="columna-25 columna-mobile-100">
+						<h3>
+							Datos de contacto
+						</h3>
+						<ul>
+							<li>francy81-mosquera@hotmail.com</li>
+							<li>+076 722 0271</li>
+							<li>Klotenerstrasse 15<br>CH-8304 Walliseller/Zürich/Scheiz</li>
+						</ul>
+					</div>
+					<div class="columna-25 columna-mobile-100">
+						<h3>
+							Redes Sociales
+						</h3>
+						<ul class="redes">
+							<li>
+								<a href="https://www.facebook.com/francy.baier">
+									<i class="fab fa-facebook-square"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/kosmetikerinfrancys/?hl=es">
+									<i class="fab fa-instagram-square"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.tiktok.com/@cosmetologa81?">
+									<i class="fab fa-tiktok"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="barra-footer">
+				&copy; Derechos Reservados - 2021
+			</div>
+		</footer>
+        <script src="{% static 'jquery.js' $}"></script>
+		<script src="{% static 'funciones.js' %}"></script>
+        <script src="{% static 'funciones.js' %}"></script>    
+	</body>
 </html>
