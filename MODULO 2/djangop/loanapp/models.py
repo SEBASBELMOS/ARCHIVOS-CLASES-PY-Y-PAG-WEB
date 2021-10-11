@@ -8,4 +8,4 @@ class cita(models.Model):
     duracion = models.DurationField()
 
     def __str__(self):
-        return self.titulo
+        return self.servicio
