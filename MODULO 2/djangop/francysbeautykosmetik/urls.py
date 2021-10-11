@@ -19,10 +19,5 @@ from loanapp.views import * #el* es para llamar a todas
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('prueba/', prueba),
-    path('prueba/suma/', suma),
-    path('<int:fecha>/<int:fecha2>', calcular),
-    path('', index),
-    path('post/', post),
     path('',home)
 ]
