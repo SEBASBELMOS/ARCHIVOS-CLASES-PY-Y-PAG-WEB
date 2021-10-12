@@ -37,8 +37,9 @@ p
 #nosotros .container #namef
 {
 	text-align: center;
-	font-size: 22px;
+	font-size: 30px;
 	font-weight: bold;
+	font-family: Forte;
 }
 
 #nosotros .container #ftf
@@ -207,6 +208,24 @@ footer .redes a
 	position: relative;
 }
 
+.cuadrado-catalogo
+{
+	width: 100%;
+	padding-bottom: 100%;
+	position: relative;
+}
+
+.cuadrado-catalogo img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	top: 0;
+	left: 0;
+	object-position: center;
+	position: relative;
+}
+
 .cuadrado-perfecto img
 {
 	width: 100%;
@@ -222,8 +241,8 @@ footer .redes a
 {
 	position: relative;
 	background-color: #f8e9eb;
-	padding-top: 1px;
-	padding-bottom: 8px;
+	padding-top: 180px;
+	padding-bottom: 180px;
 }
 
 #inicio img
@@ -335,6 +354,19 @@ footer .redes a
 #galeria .cuadrado-perfecto img
 {
 	border: 2px solid #d91b54;
+}
+
+#catalogo
+{
+	padding-right: 500px;
+	position: relative;
+}
+
+#catalogo .cuadrado-catalogo img
+{
+	border: 2px solid #d91b54;
+	height: 800px;
+	width: 1200px;
 }
 
 .seccion
