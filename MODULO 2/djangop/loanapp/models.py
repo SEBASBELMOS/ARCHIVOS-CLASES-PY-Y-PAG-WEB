@@ -12,15 +12,7 @@ serv_opc = [
 ]
 
 class serv(models.Model):
-    fecha = models.DateField(max_length=13)
     servicio = models.CharField(max_length=50, choices=serv_opc)
+    precio = models.FloatField(default=None)
 
-class cita(models.Model):
-    precio = models.FloatField()
-    duracion = models.DurationField()
-
-class Persona(models.Model):
-    nombre = models.CharField(max_length=60)
-    apellido = models.CharField(max_length=100)
-    email = models.EmailField(max_length=40)
 
