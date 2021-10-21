@@ -19,6 +19,6 @@ from loanapp.views import * #el* es para llamar a todas
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',home),
+    path('',home, name='home'),
     path('login/', login, name='login'),
 ]
