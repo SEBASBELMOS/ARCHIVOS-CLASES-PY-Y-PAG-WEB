@@ -1,7 +1,7 @@
 from django.db import models
 from django.db.models.base import Model
 from django.db.models.fields.related import OneToOneField
-
+from django.contrib.auth.models import User
 # Create your models here.
 
 class persona(models.Model):
