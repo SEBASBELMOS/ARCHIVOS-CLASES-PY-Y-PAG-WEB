@@ -1,0 +1,54 @@
+{% extends 'index.html' %}
+
+{% block titulo %}
+    Registro
+{% endblock titulo %}
+
+{% block tema %}
+    Agregar Usuario                            
+{% endblock tema %}
+
+{% block contenido %}
+<br>
+<div class="row">
+    <div class="col-6">
+        <form action="{% url 'registrar_usuario' %}" method="post"> 
+            {% if messages %}
+                {% for message in messages %}
+                <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+                
+            {% endif %}          
+            {% csrf_token %}            
+            <div class="row mb-3">
+                {{UsuarioForm.usuario.label}}
+                {{UsuarioForm.usuario}}
+            </div>
+            <div class="row mb-3">
+                {{UsuarioForm.email.label}}
+                {{UsuarioForm.email}}
+            </div>
+            <div class="row mb-3">
+                {{UsuarioForm.contraseña.label}}
+                {{UsuarioForm.contraseña}}
+            </div>
+            <div class="row mb-3">
+                {{UsuarioForm.contraseña_verificar.label}}
+                {{UsuarioForm.contraseña_verificar}}
+            </div> 
+            <div class="row m-1">
+                <div class="col-2">
+                    <button type="submit" class="btn btn-primary">Registrar</button>                    
+                </div>
+                <div class="col-2">
+                    <button type="reset" class="btn btn-secondary">Resetear</button>
+                </div>                
+            </div>        
+        </form>        
+    </div>
+</div>
+<br>                     
+{% endblock contenido %}
