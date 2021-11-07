@@ -1,7 +1,7 @@
 {% extends 'index.html' %}
 
 {% block titulo %}
-    Login
+    Acceso
 {% endblock titulo %}
 
 {% block tema %}
@@ -42,5 +42,9 @@
             </div>
         </div>
     </div>
-<br>                     
+<br>      
+<div style="padding-left: 42px ">
+    <p>Si no tiene su usuario/contraseña <a href="{%url 'registrar_usuario'%}"><b> Registrarse</b></a></p> 
+</div>  
+<br>              
 {% endblock contenido %}
