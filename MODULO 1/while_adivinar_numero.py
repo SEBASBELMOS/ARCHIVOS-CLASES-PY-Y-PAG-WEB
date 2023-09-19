@@ -8,7 +8,7 @@ intentos = 1
 print("Programa juego de adivinar numero")
 while intentos < 5:
     try:
-        numero = int(input("Diga un numero entre 1 y 10 "))
+        numero = int(input("Diga un numero entre 1 y 10; "))
         if numero == num_secreto:
             print("Ganador!!!")
             break
