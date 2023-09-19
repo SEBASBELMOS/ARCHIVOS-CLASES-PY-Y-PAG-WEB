@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+
+{% block contenido %}
+    
+    {% if estado ==True %}
+        {%include 'correcto.html'%}
+    {% else %}
+        {%include 'fallo.html'%}
+    {% endif %}
+        
+{% endblock contenido %}
+    

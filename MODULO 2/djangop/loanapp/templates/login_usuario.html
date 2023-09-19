@@ -1,0 +1,50 @@
+{% extends 'index.html' %}
+
+{% block titulo %}
+    Acceso
+{% endblock titulo %}
+
+{% block tema %}
+    Acceso                           
+{% endblock tema %}
+
+{% block contenido %}
+<br>
+    <div class="row">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">
+                    <h6>Acceder al Sitio | Login</h6>
+                </div>
+                <div class="card-body">
+                    {% if messages %}
+                    {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    {% endfor %}
+                    
+                {% endif %}
+                    <form action="{% url 'login_user' %}" method="post">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="id_usuario" class="form-label">{{formLogin.usuario.label}}</label>
+                            {{formLogin.usuario}}                         
+                        </div>
+                        <div class="mb-3">
+                            <label for="id_contraseña" class="form-label">{{formLogin.contraseña.label}}</label>
+                            {{formLogin.contraseña}}
+                        </div>                        
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>      
+<div style="padding-left: 42px ">
+    <p>Si no tiene su usuario/contraseña <a href="{%url 'registrar_usuario'%}"><b> Registrarse</b></a></p> 
+</div>  
+<br>              
+{% endblock contenido %}
